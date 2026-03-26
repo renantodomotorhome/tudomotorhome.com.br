@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tudo Motorhome - Em breve</title>
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Custom Style -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Tailwind CSS (via CDN) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'brand-orange': '#FFAA00',
+            'brand-teal': '#169BBF',
+          },
+          fontFamily: {
+            sans: ['Inter', 'Arial', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body
+  class="font-sans antialiased text-white relative min-h-screen flex flex-col items-center justify-between overflow-x-hidden">
+  <!-- Background Image with Overlay -->
+  <div class="fixed inset-0 z-[-1] bg-cover bg-center bg-no-repeat w-full h-full"
+    style="background-image: url('assets/hero-bg.jpg');">
+    <!-- Dark overlay to ensure text contrast -->
+    <div class="absolute inset-0 bg-black/60 sm:bg-black/50"></div>
+  </div>
+
+  <!-- Header -->
+  <header class="w-full max-w-7xl mx-auto p-6 flex justify-center mt-2 sm:mt-6">
+    <img src="assets/logoTM_BR.svg" alt="Tudo Motorhome" class="h-14 sm:h-20 w-auto drop-shadow-lg" />
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-1 flex flex-col items-center justify-center w-full max-w-4xl mx-auto px-6 text-center z-10 py-12">
+    <h1 class="text-sm sm:text-base font-bold tracking-[0.2em] uppercase text-brand-orange mb-4 drop-shadow-md">
+      Em breve...
+    </h1>
+
+    <h2 class="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight text-white drop-shadow-2xl max-w-3xl"
+      style="text-wrap: balance;">
+      O primeiro marketplace 100% focado no universo dos motorhomes está chegando ao Brasil.
+    </h2>
+
+    <p class="text-lg sm:text-xl text-gray-200 mt-8 max-w-2xl font-medium drop-shadow-md mx-auto"
+      style="text-wrap: balance;">
+      Tudo o que você precisa para a sua vida na estrada: veículos, acessórios, serviços e turismo em um só lugar.
+    </p>
+  </main>
+
+  <!-- Footer -->
+  <footer class="w-full p-6 flex flex-col items-center gap-5 text-gray-400 text-sm z-10 sm:mb-4">
+    <p class="font-medium tracking-wide">© 2026 Tudo Motorhome. Todos os direitos reservados.</p>
+  </footer>
+</body>
+
+</html>
